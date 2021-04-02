@@ -1,8 +1,17 @@
 import siteMetadata from '@/data/siteMetadata'
 import SocialIcon from '@/components/social-icons'
 import { PageSeo } from '@/components/SEO'
+import * as gtag from '@/lib/gtag'
 
 export default function About() {
+  const gtagAdd = () => {
+    gtag.event({
+      action: 'click',
+      category: 'contact',
+      label: 'email contact',
+    })
+  }
+
   return (
     <>
       <PageSeo
@@ -22,8 +31,11 @@ export default function About() {
             <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
               {siteMetadata.author}
             </h3>
-            <div className="text-gray-500 dark:text-gray-400">Professor of Atmospheric Science</div>
-            <div className="text-gray-500 dark:text-gray-400">Stanford University</div>
+            <div className="text-gray-500 dark:text-gray-400">Front-End Developer</div>
+            <div className="text-gray-500 dark:text-gray-400"></div>
+            <button className="hidden" onClick={() => gtagAdd()}>
+              Click gtag test
+            </button>
             <div className="flex pt-6 space-x-3">
               <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} />
               <SocialIcon kind="github" href={siteMetadata.github} />
@@ -35,19 +47,9 @@ export default function About() {
           </div>
           <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
             <p>
-              Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His
-              research interests includes complexity modelling of tailwinds, headwinds and
-              crosswinds.
-            </p>
-            <p>
-              He leads the clean energy group which develops 3D air pollution-climate models, writes
-              differential equation solvers, and manufactures titanium plated air ballons. In his
-              free time he bakes raspberry pi.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique
-              placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem
-              nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+              Hi, I'm Jordi Flores, a fullstack developer located near to the beautiful city of
+              Barcelona. I always do my best to be as talented as Paul Irish, Harry Roberts, Addy
+              Osmani or Brad Frost.
             </p>
           </div>
         </div>
