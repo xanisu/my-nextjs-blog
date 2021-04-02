@@ -1,7 +1,7 @@
 import siteMetadata from '@/data/siteMetadata'
 import SocialIcon from '@/components/social-icons'
 import { PageSeo } from '@/components/SEO'
-import * as gtag from '../lib/gtag'
+import * as gtag from '@/lib/gtag'
 
 export default function About() {
   const gtagAdd = () => {
