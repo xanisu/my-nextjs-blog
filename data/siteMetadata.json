@@ -1,8 +1,8 @@
 {
   "title": "Blog",
-  "author": "Jordi Flores",
-  "headerTitle": "Jordi Flores",
-  "description": "Blog creado con Next.js y Tailwind.css",
+  "author": "George Flowers",
+  "headerTitle": "George Flowers",
+  "description": "Blog",
   "language": "es-ES",
   "siteUrl": "my-nextjs-blog-xanisu.vercel.app",
   "siteRepo": "https://github.com/xanisu/my-nextjs-blog",

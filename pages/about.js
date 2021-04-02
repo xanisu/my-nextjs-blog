@@ -31,7 +31,7 @@ export default function About() {
             <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
               {siteMetadata.author}
             </h3>
-            <div className="text-gray-500 dark:text-gray-400">Front-End Developer</div>
+            <div className="text-gray-500 dark:text-gray-400">Front-End</div>
             <div className="text-gray-500 dark:text-gray-400"></div>
             <button className="hidden" onClick={() => gtagAdd()}>
               Click gtag test
@@ -46,10 +46,15 @@ export default function About() {
             </div>
           </div>
           <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
+            <p>HTML, CSS, Javascript developer.</p>
+            <p>Intento seguir de cerca los pasos de Addy Osmani y Harry Roberts.</p>
             <p>
-              Hi, I'm Jordi Flores, a fullstack developer located near to the beautiful city of
-              Barcelona. I always do my best to be as talented as Paul Irish, Harry Roberts, Addy
-              Osmani or Brad Frost.
+              Actualmente se podría decir que soy un Front-End Developer, pero me cuesta
+              encasillarme.
+            </p>
+            <p>
+              En el pleistoceno estuve desarrollando páginas con flash, c#, asp, jsp, cristal
+              reports, formularios de Visual Basic e Informix.
             </p>
           </div>
         </div>
