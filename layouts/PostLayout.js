@@ -117,7 +117,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                   href="/blog"
                   className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
                 >
-                  &larr; Back to the blog
+                  &larr; Volver al blog
                 </Link>
               </div>
             </footer>
