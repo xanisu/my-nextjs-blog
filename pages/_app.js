@@ -9,7 +9,7 @@ import { SEO } from '@/components/SEO'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import MDXComponents from '@/components/MDXComponents'
 
-import * as gtag from '@/lib/gtag'
+import { GTMPageView } from '@/lib/gtm'
 
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }) {
   const router = useRouter()
   useEffect(() => {
     const handleRouteChange = (url) => {
-      gtag.pageview(url)
+      GTMPageView(url)
     }
     router.events.on('routeChangeComplete', handleRouteChange)
     return () => {

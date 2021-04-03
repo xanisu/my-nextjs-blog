@@ -1,17 +1,8 @@
 import siteMetadata from '@/data/siteMetadata'
 import SocialIcon from '@/components/social-icons'
 import { PageSeo } from '@/components/SEO'
-import * as gtag from '@/lib/gtag'
 
 export default function About() {
-  const gtagAdd = () => {
-    gtag.event({
-      action: 'click',
-      category: 'contact',
-      label: 'email contact',
-    })
-  }
-
   return (
     <>
       <PageSeo
@@ -33,9 +24,7 @@ export default function About() {
             </h3>
             <div className="text-gray-500 dark:text-gray-400">Front-End</div>
             <div className="text-gray-500 dark:text-gray-400"></div>
-            <button className="hidden" onClick={() => gtagAdd()}>
-              Click gtag test
-            </button>
+
             <div className="flex pt-6 space-x-3">
               <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} />
               <SocialIcon kind="github" href={siteMetadata.github} />
