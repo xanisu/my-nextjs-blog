@@ -45,19 +45,10 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
               <dd>
                 <ul className="flex justify-center space-x-8 xl:block sm:space-x-12 xl:space-x-0 xl:space-y-8">
                   <li className="flex items-center space-x-2">
-                    <img src={siteMetdata.image} alt="avatar" className="w-10 h-10 rounded-full" />
+                    <img src={siteMetdata.image} alt="avatar" className="w-10 h-10" />
                     <dl className="text-sm font-medium leading-5 whitespace-nowrap">
                       <dt className="sr-only">Name</dt>
                       <dd className="text-gray-900 dark:text-gray-100">{siteMetdata.author}</dd>
-                      <dt className="sr-only">Twitter</dt>
-                      <dd>
-                        <Link
-                          href={siteMetdata.twitter}
-                          className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
-                        >
-                          {siteMetdata.twitter.replace('https://twitter.com/', '@')}
-                        </Link>
-                      </dd>
                     </dl>
                   </li>
                 </ul>
@@ -92,7 +83,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                     {prev && (
                       <div>
                         <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
-                          Previous Article
+                          Previo
                         </h2>
                         <div className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400">
                           <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
